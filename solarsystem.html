@@ -9,6 +9,7 @@
 <body>
     <h1>Solar System</h1>
     <table>
+        <thead>
         <!--tr : table rows-->
         <tr>
         <!--th : table headers -->
@@ -16,19 +17,58 @@
             <th>Mean Temperature (C)</th>
             <th>Ring System?</th>
         </tr>
+       </thead>
+
+       <tbody>
         <tr>
         <!--td : table data -->
         <td>MERCURY</td>
         <td>167<sup>o</sup>C</td>
         <td>NO</td>
         </tr>
+    
 
         <tr>
         <td>VENUS</td>
-        <td>464</td>
+        <td>464<sup>o</sup>C</td>
         <td>NO</td>
         </tr>
+    </tbody>
     </table>
+
+    <h2>V2</h2>
+        <table>
+            <thead>
+            <!--tr : table rows-->
+            <tr>
+            <!--th : table headers -->
+                <th rowspan="2">Planet</th>
+                <th colspan="2">Mean Temperature</th>         
+            </tr>
+
+            <tr>
+                <th>C</th>  
+                <th>F</th>  
+            </tr>
+           </thead>
+    
+           <tbody>
+            <tr>
+            <!--td : table data -->
+            <td>MERCURY</td>
+            <td>167<sup>o</sup>C</td>
+            <td>332.6<sup>o</sup>F</td>
+            </tr>
+        
+    
+            <tr>
+            <td>VENUS</td>
+            <td>464<sup>o</sup>C</td>
+            <td>867.2<sup>o</sup>F</td>
+            </tr>
+        </tbody>
+        </table>
+
     
 </body>
 </html>
