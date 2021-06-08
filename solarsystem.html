@@ -75,30 +75,31 @@
     <!--The Form Element-->
     <h3>Forms Demo</h3>
 
-    <form action="/stars">
+        <form action="/stars">
         <p>
             <!--*The Label Element*-->
             <label for="planet">Enter a Planet:</label>
             <!-- placeholder : an atribute that will specify 
         the placeholder text for an input-->
-            <input id="planet" type="text" placeholder="planet">
+            <input id="planet" type="text" placeholder="planet" name="planet">
         </p>
         <p>
             <label for="password">Enter a password:</label>
-            <input type="password" placeholder="your password" id="password">
+            <input type="password" placeholder="your password" id="password" name="password">
         </p>
         <p>
             <label for="color">Choose a color</label>
-            <input type="color" id="color">
+            <input type="color" id="color" name="color">
         </p>
         <p>
             <!-- Alternative way to label an input (less common)-->
             <label>
                 Enter a number:
-                <input type="number" placeholder="lucky number" id="number">
+                <input type="number" placeholder="lucky number" id="number" name="num">
             </label>
-        <!-- The Button Element -->
         </p>
+        <!-- The Button Element -->
+
         <!--this button doesn't submit the form b/c of the "type" atribute -->
         <button type="button">Regular button(won't submit)</button>
         <!--This button submits the form!-->
@@ -109,7 +110,10 @@
     <hr>
     <!--Outside of a form, no default behavior -->
     <button>Not Inside Form</button>
-
+    <form action="https://www.google.com/search">
+    <input type="text" name ="q">
+    <button>Search Google</button>
+    </form>
 
 
 </body>
