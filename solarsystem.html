@@ -84,20 +84,31 @@
             <input id="planet" type="text" placeholder="planet">
         </p>
         <p>
-        <label for="password">Enter a password:</label>
-        <input type="password" placeholder="your password" id="password">
+            <label for="password">Enter a password:</label>
+            <input type="password" placeholder="your password" id="password">
         </p>
         <p>
             <label for="color">Choose a color</label>
-        <input type="color" id="color">
+            <input type="color" id="color">
         </p>
         <p>
-        <label>
-         Enter a number:
-        <input type="number" placeholder="lucky number" id="number">
-       </label>
+            <!-- Alternative way to label an input (less common)-->
+            <label>
+                Enter a number:
+                <input type="number" placeholder="lucky number" id="number">
+            </label>
+        <!-- The Button Element -->
         </p>
+        <!--this button doesn't submit the form b/c of the "type" atribute -->
+        <button type="button">Regular button(won't submit)</button>
+        <!--This button submits the form!-->
+        <button>Submit!!</button>
+        <!-- So does this one: -->
+        <input type="submit" value="Click Me">
     </form>
+    <hr>
+    <!--Outside of a form, no default behavior -->
+    <button>Not Inside Form</button>
 
 
 
