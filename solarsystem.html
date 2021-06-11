@@ -111,19 +111,35 @@
     <h2>Hijacking Searches</h2>
     <!--Outside of a form, no default behavior -->
     <button>Not Inside Form</button>
-    <h3> Search Google  </h3>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <button>Search Google</button>
-        </form>
+    <h3> Search Google </h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
 
-        　　
-        <h3> Search Youtube </h3>
-    　 <!-- Still work with Enter withoput Button-->
-        <form action="https://www.youtube.com/results">
-            <input type="text" name="search_query">
-            <button>Search Youtube</button>
-        </form>
+    　　
+    <h3> Search Youtube </h3>
+    　
+    <!-- Still work with Enter withoput Button-->
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
+
+
+    <h3> More Inputs! </h3>
+
+    <form action="/marriage ">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I want to be married.</label>
+        <p>
+            <!--Giving the same exact name to GROUP together-->
+            <input type="radio" name="status" id="single" value="single"><label for="single">I am single.</label>
+            <input type="radio" name="status" id="widow" value="widow"><label for="widow">I am widow.</label>
+            <input type="radio" name="status" id="LGBT" value="LGBT"><label for="LGBT">I am LGBT.</label>
+        </p>
+        <button>Submit</button>
+    </form>
 
 
 </body>
