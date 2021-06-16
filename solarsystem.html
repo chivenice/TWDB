@@ -95,7 +95,7 @@
             <!-- Alternative way to label an input (less common)-->
             <label>
                 Enter a number:
-                <input type="number" placeholder="lucky number" id="number" name="num">
+                <input type="number" placeholder="lucky number" id="number" name="num" min="1" max="10">
             </label>
         </p>
         <!-- The Button Element -->
@@ -145,13 +145,17 @@
         <select name="planets" id="planet-select">
             <option value="">Please choose an option</option>
             <option value="mercury">Mercury</option>
-            <option value="jupiter">Jupiter</option>
+            <option value="jupiter" selected>Jupiter</option>
             <option value="Saturn">Saturn</option>
             <option value="Uranus">Uranus</option>
         </select>
 
     </form>
+  <p>
+    <label for="cheese">Amont of cheese:</label>
+    <input type="range" id="cheese" min="1" max="100" value="66" step="7" name="cheese_level">
 
+  </p>
 
 </body>
 
