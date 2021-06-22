@@ -36,7 +36,10 @@ span {
     color:#ffffff;
     font-size: 20px;
 }
-
+/*Decendant Selector: Select all <a> inside an <li> */
+li a {
+    color :slateblue;
+}
 a {
     text-decoration: none;
 }
