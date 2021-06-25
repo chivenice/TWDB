@@ -1,6 +1,6 @@
 /* *is Universal Selector not common to use */
 body {
-    background-color: #cb997e;
+    background-color: #ece4db;
 }
 h2 {
     text-align: center;
@@ -42,4 +42,16 @@ li a {
 }
 a {
     text-decoration: none;
+}
+
+/* Edit any selector come after <h3> */
+h3 + button {
+    font-size: 20px;
+    color:snow;
+    background-color: black;
+}
+
+/*Direct Child*/
+footer > a {
+    color: cadetblue;
 }
