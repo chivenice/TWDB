@@ -11,6 +11,18 @@ h2 {
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     font-family: fantasy;
 }
+h2::first-letter { 
+    font-size: 50px;
+
+}
+
+p::first-line {
+    color:#74c69d;
+}
+p::selection {
+    background-color:red;
+
+}
 p1 {
     text-align: left;
     font-weight: 700;
@@ -54,6 +66,11 @@ h3 + button {
 /*Direct Child*/
 footer > a {
     color: cadetblue;
+    font-weight: bold;
+
+}
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* Attribute Selector: Select all input elements where the type attribute is set to "text"*/
@@ -68,4 +85,14 @@ input[type="text"] {
 /* <a> elements with an href containing "google" */
 a[href*="google"] {
     color:palevioletred;
+}
+
+/* :hover */
+button:hover {
+    background-color: #74c69d ;
+    color: palevioletred;
+}
+
+button:active {
+    background-color: violet;   
 }
