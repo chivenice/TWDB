@@ -23,6 +23,7 @@ ul {
     max-width: 50%;
     display: flex;
     justify-content: space-evenly;
+    border: 1px solid palevioletred;
 }
 
 
@@ -71,7 +72,7 @@ ul {
     h1 {
         color: palevioletred;
     }
-}
+} 
  
 /* @media (orientation: landscape) {
  body {
@@ -80,7 +81,7 @@ ul {
 } */
 
 
-/* @media (max-width: 768px){
+ @media (max-width: 768px){
     h1 {
         font-size: 4em;
     }
@@ -94,4 +95,4 @@ ul {
     h1 {
         font-size: 3em;
     }
-} */
+}
