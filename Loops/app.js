@@ -339,10 +339,17 @@ const animals = [
     "Zorilla"
 ]
 
-for (let a = 0; a < animals.length; a++) {
+/* for (let a = 0; a < animals.length; a++) {
     console.log(a, animals[a])
-}
-// backward-animals
-/* for (let i = animals.length - 1; i >= 0; i--) {
-   console.log(animals[i])
 } */
+// backward-animals
+ for (
+    let a = animals.length -1 ; a>=0; a--
+) { console.log(a,animals[a])}
+
+//EX
+const people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"]; 
+
+for (
+    let i=0; i<=people.length; i++)
+    {console.log(people[i].toUpperCase())}
