@@ -9,7 +9,7 @@ body {
 
 button {
     background:none;
-    color: #ffb703;
+    color: hsl(271, 82%, 46%);
     border: 2px solid;
     padding: 1em 2em;
     font-size: 1em;
@@ -18,7 +18,7 @@ button {
 }
 
 button:hover{
-    border-color:#83c5be ;
+    border-color:#15867b ;
     color: white;
     box-shadow: 0 0.5em 0.5em -0.4em #83c5be;
     transform: translateY(-0.25em);
