@@ -364,8 +364,18 @@ const seatingChart = [
 ];
 for ( let i=0; i< seatingChart.length; i++ ){
    const row= seatingChart[i];
-   console.log(`ROW:${i+1}`);
+   console.log(`ROW:#${i+1}`);
    for (let j=0; j< row.length; j++){
        console.log(` SEAT${j+1}: ${row[j]}`);
    }
 }
+
+//WHILE LOOPS
+  /* Secret code for BAR Entry*/
+  const SECRET ="A-ngela";
+
+  let guess = prompt('tell me the code:');
+  while (guess !== SECRET){
+      guess = prompt('the damn code is ...');
+  }
+  console.log("Come in!")
