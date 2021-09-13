@@ -372,10 +372,20 @@ for ( let i=0; i< seatingChart.length; i++ ){
 
 //WHILE LOOPS
   /* Secret code for BAR Entry*/
-  const SECRET ="A-ngela";
+/*   const SECRET ="A-ngela";
 
   let guess = prompt('tell me the code:');
   while (guess !== SECRET){
       guess = prompt('the damn code is ...');
   }
-  console.log("Come in!")
+  console.log("Come in!") */
+
+// Guessing GAME
+
+let maximum = parseInt(prompt("Enter your maximum number!"));
+
+while (!maximum) {
+    maximum = parseInt(prompt("Enter a valid number!"));
+}
+const targetNum = Math.floor(Math.random()* maximum) +1;
+console.log(targetNum)
