@@ -392,12 +392,15 @@ const targetNum = Math.floor(Math.random()* maximum) +1;
 console.log(targetNum);
 
 let guess = parseInt(prompt("Enter your first guess"));
+let attemps =1;
 
-while (guess !== targetNum){
+while (parseInt(guess) !== targetNum){
+    if (guess ==='q')break;
+    attemps++;
     if (guess > targetNum){
-       guess = parseInt(prompt("Too high! Enter a new guess:"))
+       guess = prompt("Too high! Enter a new guess:")
     }
-    else { guess = parseInt(prompt("Too low! Enter a new guess:"))
+    else { guess = prompt("Too low! Enter a new guess:")
     }
 }
-console.log("Chi got it ! lol")
+console.log(`Chi got it ! lol ! It took you ${attemps} guesses`) 
