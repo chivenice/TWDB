@@ -369,6 +369,12 @@ for ( let i=0; i< seatingChart.length; i++ ){
        console.log(` SEAT${j+1}: ${row[j]}`);
    }
 }
+ // *FOR OF 
+ for (let row of seatingChart){
+    for( let student of row){
+        console.log(student);
+    }
+ } 
 
 //WHILE LOOPS
   /* Secret code for BAR Entry*/
