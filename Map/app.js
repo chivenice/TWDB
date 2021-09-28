@@ -23,9 +23,24 @@ const movies = [
         score: 90
     }
 ]
-
+/* 
 const titles = movies.map(function (movie) {
     return movie.title.toUpperCase();
-})
+}) */
 
+//regular
+/* const ranking = movies.map(function (movie){
+   return `${movie.title} - ${movie.score / 10}`
+}) */
 
+//arrow
+/* const ranking = movies.map((movie)=>{
+    return   `${movie.title} - ${movie.score / 10}`
+}) */
+
+//implicity return
+/* const ranking = movies.map(movie => (`${movie.title} - ${movie.score / 10}`))
+ */
+
+//one-liner implicity
+const ranking = movies.map(movie =>`${movie.title} - ${movie.score / 10}`);
