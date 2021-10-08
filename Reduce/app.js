@@ -44,3 +44,26 @@ const highestRated = movies.reduce((bestMovie,movie)=>{
     }
     return bestMovie;
 })
+
+// this ES6
+var cat = {
+    name: 'Neko',
+    tasks: ['pounce in/out boxes', 'eat fish', 'scratch'],
+    showTasks() {
+      this.tasks.forEach((task) => {
+        alert(this.name + " wants to " + task);
+      });  
+    }
+  };
+
+  // this ES5
+
+  var dog = {
+    name: 'Inu',
+    tasks: ['be cuddled' , 'have bones', 'walk'],
+    showTasks: function() {
+      this.tasks.forEach(function(task) {
+        alert(this.name + " wants to " + task);
+      }.blind(this));  
+    }
+  };
