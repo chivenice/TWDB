@@ -8,6 +8,14 @@ for (let price of prices) {
 }
 console.log(total) */
 
-prices.reduce((total,price)=>{
+/* const total = prices.reduce((total,price)=>{
     return total + price
+}) */
+
+// find Max
+const max = prices.reduce((max, price)=>{
+    if(price>max){
+        return price;
+    }
+    return max
 })
