@@ -38,12 +38,17 @@ const movies = [
         score: 90
     }
 ]
-const highestRated = movies.reduce((bestMovie,movie)=>{
+/* const highestRated = movies.reduce((bestMovie,movie)=>{
     if(movie.score > bestMovie.score){
         return movie;
     }
     return bestMovie;
-})
+}) */
+
+// using param
+const highestRated = movies.filter(({score})=> score >=90)
+
+
 
 // this ES6
 var cat = {
