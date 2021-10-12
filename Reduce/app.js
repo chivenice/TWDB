@@ -22,18 +22,25 @@ const max = prices.reduce((max, price)=>{
 
 const movies = [
     {
+        year:1990,
         title: 'Amadeus',
         score: 99
     },
     {
+        year:1996,
+
         title: 'Stand By Me',
         score: 85
     },
     {
+        year:2018,
+
         title: 'Parasite',
         score: 95
     },
     {
+        year:2010,
+
         title: 'Alien',
         score: 90
     }
@@ -46,8 +53,11 @@ const movies = [
 }) */
 
 // using param
-const highestRated = movies.filter(({score})=> score >=90)
-
+/* const highestRated = movies.filter(({score})=> score >=90)
+ */
+const bestMovie = movies.map(movie=> {
+    return `${movie.title} (${movie.year}) is rated ${movie.score}`
+})
 
 
 // this ES6
