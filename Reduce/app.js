@@ -33,7 +33,7 @@ const movies = [
         score: 85
     },
     {
-        year:2018,
+        year:2019,
 
         title: 'Parasite',
         score: 95
@@ -55,8 +55,12 @@ const movies = [
 // using param
 /* const highestRated = movies.filter(({score})=> score >=90)
  */
-const bestMovie = movies.map(movie=> {
+/* const bestMovie = movies.map(movie=> {
     return `${movie.title} (${movie.year}) is rated ${movie.score}`
+}) */
+// => oneline:
+const bestMovie = movies.map(({title,score,year})=> {
+    return `${title} (${year}) is rated ${score}`
 })
 
 
